@@ -1,0 +1,114 @@
+\documentclass[justified]{tufte-book}
+\usepackage{amsmath, amssymb, amsthm, bm, moresize}
+\usepackage{euler, ifthen, changepage}
+
+\usepackage{graphicx, epsdice, xcolor, listings, float, wrapfig, caption}
+
+\definecolor{mblu}{rgb}{0.05, 0.40, 0.70}
+
+\geometry{
+    left          =1.0in, % left margin
+    textwidth     =5.0in, % main text block
+    marginparsep  =0.2in, % gutter between main text block and margin notes
+    marginparwidth=1.8in, % width of margin notes
+}
+
+\newcommand{\centeredgeometry}{
+    \newgeometry{
+        left          =1.0in, % left margin
+        textwidth     =6.5in, % main text block
+        marginparsep  =0.0in, % gutter between main text block and margin notes
+        marginparwidth=0.0in, % width of margin notes
+    }
+}
+
+\newcommand{\mtit}[3]{%
+    \begin{adjustwidth}{0.0in}{-1.5in}
+        \begin{center}
+            \bf\sf
+            {    \color{mblu}\vspace{0.0cm} \par \noindent \HUGE #1} 
+            {\it \color{mblu}\vspace{0.3cm} \par \noindent \Huge #2}
+            {\it             \vspace{0.3cm} \par \noindent \huge #3}
+                             \vspace{0.6cm}
+        \end{center}
+    \end{adjustwidth}
+}
+\newcommand{\mchp}[1]{\let\clearpage\relax\chapter{\color{mblu}\textsf{#1}}}
+\newcommand{\msec}[1]{\section{\color{mblu}\textsf{#1}}}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\RR}{\mathbb{R}}
+%
+\newcommand{\Dd}{\mathcal{D}}
+\newcommand{\Ee}{\mathcal{E}}
+\newcommand{\Ff}{\mathcal{F}}
+\newcommand{\Gg}{\mathcal{G}}
+\newcommand{\Hh}{\mathcal{H}}
+\newcommand{\Ii}{\mathcal{I}}
+\newcommand{\Kk}{\mathcal{K}}
+\newcommand{\Ll}{\mathcal{L}}
+\newcommand{\Mm}{\mathcal{M}}
+\newcommand{\Nn}{\mathcal{N}}
+\newcommand{\Ss}{\mathcal{S}}
+\newcommand{\Tt}{\mathcal{T}}
+\newcommand{\Uu}{\mathcal{U}}
+\newcommand{\Vv}{\mathcal{V}}
+\newcommand{\Xx}{\mathcal{X}}
+\newcommand{\Yy}{\mathcal{Y}}
+
+\newtheorem*{qst}{Question}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lem}{Lemma}
+\newtheorem*{prop}{Proposition}
+\newtheorem*{clm}{Claim}
+\theoremstyle{definition}
+\newtheorem*{dfn}{Definition}
+
+\begin{document}
+
+    \mtit{Rocks from the Ground Up}
+         {A Firm Foundation in Geology}
+         {Sam Tenka \hspace{1.0 cm} 2020}
+
+    Rocks are hard; their study, harder.  These notes aim to expose rock
+    theory, famed for its dry impenetrability, to a non-specialist audience 
+
+compelling unity of science, 
+    non-specialist audience.  The ideal audience is Emmy Noether.
+
+    \mchp{Scylla and Charybdis}
+
+        Science is marked by its emphasis on observation --- above reason,
+        aesthetics, intuition, and revelation from authority --- as a means to
+        know the world.
+        %
+        The 20th century revealed two counterintuitive phenomena that
+        complicate the process of observation itself.
+        %
+        Kant proposed that our very ability to sense gives rise  
+        %
+        (\textbf{A}) the relations between space and time are not as we expect.
+        Thus, a 70 mph cheetah chasing a 60 mph antelope may perceive its prey
+        as drawing nearer by \emph{more} than 10 mph.  
+        %
+        (\textbf{B}) measurements are 
+
+        \msec{Length and duration}
+        \msec{Detecting matter}
+        \msec{Classifying particles}
+        \msec{Relativistic quantum fields}
+        \msec{Spin and statistics}
+        \msec{The solidity of rocks}
+
+    \mchp{Emma}
+    \mchp{Frankenstein}
+    \mchp{Ecclesiastes}
+    \mchp{Zembla}
+
+\end{document}
+
+
